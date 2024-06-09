@@ -1,0 +1,231 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.body {
+    background-color: #292323;
+    color: white;
+
+}
+/* NAVEGADOR */
+.navbar nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+
+.icono_lib {
+    width: 20px;
+    height: 20px;
+}
+
+.navbar-brand {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    transition: 1s ease-in-out;
+}
+
+.navbar-brand:hover {
+    transform: scale(1.1);
+
+}
+
+/* LOGO DE LA PAGINA */
+.banner {
+    display: flex;
+    justify-content: center;
+    
+
+}
+
+.banner img {
+    margin-top: 40px;
+    max-width: 150px;
+    max-height: 150px;
+    animation-name: animalogo;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes animalogo {
+    0%{
+        transform: scale(0.5) ;
+    }
+    50%{
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+
+/* CONTENEDOR NOTICIAS */
+.contenedor_principal {
+    display: grid;
+
+    row-gap: 2rem;
+}
+
+.item {
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    border-radius: 8px; 
+    border: 1px solid #292323;
+    filter: drop-shadow(5px 5px 5px rgb(38, 232, 38));
+    overflow: hidden;
+}
+
+.item h3 {
+    margin-left: 20px;
+    color: rgb(38, 232, 38);
+}
+
+.item p {
+    margin-left: 20px;
+}
+
+
+
+/* Noticias */
+.principal_0{
+    background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.3)), url(https://media.tycsports.com/files/2024/04/15/703991/juanfer-quintero_862x485.webp);
+    background-size: cover;
+    background-position: center;
+    
+}
+.principal_1 {
+    background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.3)), url(./img/copa_libertadores_0.webp);
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.principal_1 {
+    background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.3)), url(./img/Dllr0N1hI_1290x760__1.jpg);
+    background-size: cover;
+    background-position: initial;
+
+}
+
+.principal_2 {
+    background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.3)), url(https://a.espncdn.com/combiner/i?img=%2Fphoto%2F2023%2F0319%2Fr1147020_1296x729_16%2D9.jpg&w=570&format=jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.principal_3 {
+    background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.3)), url(./img/NK8rPG7Lx_1290x760__1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.video-config{
+    
+    width: 100%;
+    height: 100%;
+}
+
+.principal_4 {
+    position: relative;
+    background-color: black;
+}
+.titulo-video {
+    position: absolute;
+    bottom: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1;
+}
+.principal_5 {
+    background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.3)), url(https://media.tycsports.com/files/2024/04/06/700523/ruben-dario-insua_862x485.webp);
+    background-size: cover;
+    background-position: center;
+
+}
+
+.principal_6 {
+    background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.3)), url(https://media.tycsports.com/files/2024/03/04/685944/trofeo-copa-de-la-liga-profesional_862x485.webp);
+    background-size:cover; 
+}
+.principal_7 {
+    background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.3)), url(https://www.ole.com.ar/images/2024/04/16/esciThoYU_1290x760__1.jpg);
+    
+    background-size: contain;    
+}
+
+.principal_8{
+    background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.3)), url(https://a3.espncdn.com/combiner/i?img=%2Fphoto%2F2024%2F0416%2Fr1319974_2_640x360_16%2D9.jpg&w=570&format=jpg);
+    
+}
+
+.principal_9{
+    background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.3)), url(https://a3.espncdn.com/combiner/i?img=%2Fphoto%2F2024%2F0416%2Fr1319988_1296x729_16%2D9.jpg&w=570&format=jpg);
+ 
+}
+
+
+/* FOOTER */
+
+.footer {
+    margin-top: 50px;
+    text-align: center;
+    color: rgba(112, 111, 111, 0.764);
+}
+
+@media (min-width: 768px) {
+    .banner {
+        width: 100%;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center
+    }
+
+    .banner img {
+        max-width: 150px;
+        max-height: 150px;
+    }
+
+    .contenedor_principal {
+        width: 90%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        column-gap: 2rem;
+        row-gap: 3rem;
+
+    }
+
+    .item {
+        position: relative;
+        width: 100%;
+        height: 300px;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+
+
+    }
+
+    .central {
+        grid-column: 1/3;
+    }
+    .principal_4 {
+        margin-top: 0;
+    }
+    .footer {
+        margin-top: 50px;
+        text-align: center;
+
+    }
+
+
+}

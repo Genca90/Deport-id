@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.body {
+    background-color: #292323;
+    color: white;
+
+}
+.icono_lib{
+    width: 20px;
+    height: 20px;
+}
+
+.navbar-brand{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+
+.banner {
+    display: flex;
+    justify-content: center;
+    
+
+}
+
+.banner img {
+    margin-top: 40px;
+    max-width: 150px;
+    max-height: 150px;
+}
+
+.contenedor_principal{
+    display: grid;
+
+    row-gap: 2rem;
+}
+.item {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.item h3 {
+    margin-left: 20px;
+    color: rgb(38, 232, 38);
+}
+
+.item p {
+    margin-left: 20px;
+}
+
+
+
+.principal_1 {
+    background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.3)), url(https://www.ole.com.ar/images/2019/03/23/RvKl7ksqQ_860x575__1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.principal_2 {
+    background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.3)), url(https://media.tycsports.com/files/2024/04/04/699049/seleccion-argentina-costa-rica_862x485.webp?v=1);
+    background-size: cover;
+    background-position: initial;
+    
+}
+.principal_3{
+    background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.3)), url(https://media.tycsports.com/files/2024/04/05/699898/nahuel-molina_862x485.webp);
+    background-size: cover;
+    background-position: center;
+}
+.principal_4 {
+    background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.3)), url(https://www.ole.com.ar/images/2024/06/08/eN7hU7L-8_1290x760__1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.principal_5 {
+    background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.3)), url(https://www.ole.com.ar/images/2024/06/09/9SuZyYiVB_1290x760__1.jpg);
+    background-size: cover;
+
+}
+
+
+/* 
+
+
+
+.principal_6{
+    background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.3)), url(https://media.tycsports.com/files/2024/04/06/700523/ruben-dario-insua_862x485.webp);
+    background-size: cover;
+    background-position: initial; 
+      
+}*/
+
+@media (min-width: 768px) {
+    .banner {
+       
+        width: 100%;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        filter: drop-shadow(5px 5px 5px rgb(0, 0, 0));
+
+    }
+
+    .banner img {
+
+        max-width: 150px;
+        max-height: 150px;
+        
+    }
+
+    .contenedor_principal {
+        width: 90%;
+
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        column-gap: 2rem;
+        row-gap: 3rem;
+
+    }
+
+    .item {
+        position: relative;
+        width: 100%;
+        height: 300px;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        border-radius: 8px; 
+        border: 1px solid #292323;
+        filter: drop-shadow(8px 8px 5px rgb(0, 0, 0));
+
+    }
+    .central {
+       
+        grid-column: 1/3;
+    }
+    
+    
+
+    .footer{
+        margin-top: 50px;
+        text-align: center;
+    }
+}
